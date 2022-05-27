@@ -1,0 +1,51 @@
+body{
+	background-color: #ffe2b0;
+	padding-top: 10px;
+}
+
+header{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+ul{
+	/*убирает маркировку со списка*/
+	list-style-type: none; 
+	text-align: center;
+	padding: 0px;
+}
+
+li{
+	/*делает блочный элмент li строчным, список размещается на одной строке*/
+	display: inline;
+	margin-right: 100px;
+}
+
+a{
+	color: black;
+	/*убирает линию подчеркивания*/
+	text-decoration: none;
+	font-size: 18px;
+}
+
+/*происходит изменение при наведении курсора*/
+a:hover{
+	color: rebeccapurple;
+}
+
+/*обнуляем margin-right у последнего элемента в списке*/
+li:last-child{
+	margin-right: 0px;
+}
+
+nav{
+	margin-bottom: 20px;
+}
+
+.section-about{
+	height: 640px;
+	/*background-image: url(../img/01-Картинка-фона.jpg);
+	background-position: center;
+	background-size: cover;*/
+	background: url(../img/01-Картинка-фона.jpg) center/cover no-repeat;
+}
