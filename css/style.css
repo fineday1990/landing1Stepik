@@ -1,51 +1,101 @@
-body{
-	background-color: #ffe2b0;
-	padding-top: 10px;
+/*применяется ко всем тегам*/
+*{
+	box-sizing: border-box;
 }
 
-header{
-	text-align: center;
-	margin-bottom: 20px;
+body {
+  background-color: #ffe2b0;
+  padding-top: 10px;
 }
 
-ul{
-	/*убирает маркировку со списка*/
-	list-style-type: none; 
-	text-align: center;
-	padding: 0px;
+header {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-li{
-	/*делает блочный элмент li строчным, список размещается на одной строке*/
-	display: inline;
-	margin-right: 100px;
+ul {
+  /*убирает маркировку со списка*/
+  list-style-type: none;
+  text-align: center;
+  padding: 0px;
 }
 
-a{
-	color: black;
-	/*убирает линию подчеркивания*/
-	text-decoration: none;
-	font-size: 18px;
+li {
+  /*делает блочный элмент li строчным, список размещается на одной строке*/
+  display: inline;
+  margin-right: 100px;
+}
+
+a {
+  color: black;
+  /*убирает линию подчеркивания*/
+  text-decoration: none;
+  font-size: 18px;
 }
 
 /*происходит изменение при наведении курсора*/
-a:hover{
-	color: rebeccapurple;
+a:hover {
+  color: rebeccapurple;
 }
 
 /*обнуляем margin-right у последнего элемента в списке*/
-li:last-child{
-	margin-right: 0px;
+li:last-child {
+  margin-right: 0px;
 }
 
-nav{
-	margin-bottom: 20px;
+nav {
+  margin-bottom: 20px;
 }
 
-.section-about{
-	height: 640px;
-	/*background-image: url(../img/01-Картинка-фона.jpg);
+.section-about {
+  height: 640px;
+  /*background-image: url(../img/01-Картинка-фона.jpg);
 	background-position: center;
 	background-size: cover;*/
-	background: url(../img/01-Картинка-фона.jpg) center/cover no-repeat;
+  background: url(../img/01-Картинка-фона.jpg) center/cover no-repeat;
+  margin-bottom: 20px;
+}
+
+.section-about__card{
+	width: 420px;
+	height: 190px;
+	background: linear-gradient(180deg, rgba(244,195,111,0.7) 27%, rgba(255,226,176,0.7) 68%);
+	position: relative;
+	top: 55%;
+	left: 51%;
+	padding-top: 15px;
+}
+
+.section-about__card__border{
+	width: 390px;
+	height: 160px;
+	border: 1px rgb(41, 39, 39) solid;
+	position: relative;
+	/*выравнивает блочный элемент в блочном по горизонтали*/
+	margin: 0 auto;
+	padding: 17px 0 0 28px;
+	text-align: left;
+}
+
+.section-about__title{
+	font-size: 36px;
+	margin: 0;
+	margin-bottom: 9px;
+}
+
+.section-about__text{
+	font-size: 12px;
+	margin: 0;
+}
+
+.section-description__icon-box{
+	text-align: center;
+}
+
+.section-description__icon-box img{
+	margin-right: 76px;
+}
+
+.section-description__icon-box img:last-child{
+	margin-right: 0px;
 }
